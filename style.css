@@ -1,0 +1,177 @@
+body{
+  background-color: #EDEDED;
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: +1;
+}
+
+#logo{
+/* border: 1px solid black; */
+  width: 30%;
+  height: 5em;
+  background-image: url('images/dog_logo-final.png');
+  background-repeat: no-repeat;
+  background-size: 45%; 
+  margin-left: 5.5em;
+  margin-top: 0.5em;
+
+}
+
+nav{
+background:#009df8;
+  height: 6em;
+  display: flex;
+  /* position: sticky;
+  top: 0; */
+  /* justify-content: center; */
+}
+
+.quote{
+  margin-left: 5.8em;
+  /* border: 1px solid red; */
+  position: absolute;
+  height: 5em;
+}
+
+p{
+  /* border: 1px solid pink; */
+  font-size: 20px;
+  font-family: 'Maven Pro', sans-serif;
+  line-height: 30px;
+  vertical-align: 10%;
+  position: relative;
+  bottom: 0.5em; 
+}
+
+.paws{
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+.search{
+  background: white;
+  /* border: 1px solid red; */
+  height: 5em;
+  border-bottom:1px solid #c7c7c7;
+  display: flex;
+  position: relative;
+}
+
+.form-row{
+  /* border: 1px solid red; */
+  width: 20em;
+  font-family: arial, san serif;
+  font-size: 24px;
+  position: absolute;
+  padding-top: 1em;
+  right: 2em;
+}
+select{
+  width: 15em;
+  font-size: 20px;
+  font-family: arial, san serif;
+  margin-left: 12px;
+}
+
+ul{
+  margin-top: 2.5em;
+  margin-left: 15em;
+}
+
+ul li{
+  /* border: 1px solid black; */
+  list-style: none;
+  display: inline;
+  margin-left: 3em;
+  font-size: 24px;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  cursor: pointer;
+}
+
+ul li:hover{
+  color: #d4e7ff;
+}
+
+main{
+  height: 900px;
+  /* z-index: -1; */
+  /* border: solid purple; */
+}
+
+.section-one{
+  /* border: 1px solid red; */
+  height: 450px;
+  position: relative;
+  margin-top: 1em;
+  background: white;
+}
+
+.api-img{
+  width: 500px;
+  border: 1px solid lightgrey;
+  height: 400px;
+  margin-top: 1em;
+  left: 9.5em;
+  position: absolute;
+}
+
+.api-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info{
+  width: 600px;
+  border: 1px solid lightgrey;
+  height: 400px;
+  margin-top: 1em;
+  position: absolute;
+  right: 9.5em;
+}
+.title{
+  font-size: 27px;
+  font-family: inherit;
+  text-align: center;
+  padding-top: 1.5em;
+  font-weight: bolder;
+  color: #4f4f4f;
+}
+
+.section-two{
+  /* border: 1px solid red; */
+  height: 300px;
+  /* width: 900px; */
+  position: relative;
+  margin-top: 1em;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-grid{
+  width: 250px;
+  height: 250px;
+  border: 1px solid lightgrey;
+  margin: 1.5em 1em;
+}
+
+footer{
+  height: 40px;
+  background: #9ccfff;
+  /* position: relative; */
+}
+
+.copyright{
+  /* position: absolute; */
+  padding-top: 15px;
+  text-align: center;
+  margin-top: 5em; 
+  font-family: inherit;
+  font-size: 15 px;
+}
