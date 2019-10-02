@@ -22,6 +22,27 @@ header{
 
 }
 
+nav .line{
+  width: 3em;
+  height: .3em;
+  background: white;
+  border-radius: 1em;
+  margin-top: .7em;
+  display: none;
+}
+nav .line:first-of-type{
+  margin-top: .7em;
+  display: none;
+}
+
+
+ /* header nav li:first-child {
+  cursor: pointer;
+float:right;
+display: none;
+}  */
+
+
 nav{
 background:#009df8;
   height: 6em;
@@ -40,7 +61,7 @@ background:#009df8;
 
 p{
   /* border: 1px solid pink; */
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Maven Pro', sans-serif;
   line-height: 30px;
   vertical-align: 10%;
@@ -50,7 +71,7 @@ p{
 
 .paws{
   font-family: 'Lobster', cursive;
-  font-size: 25px;
+  font-size: 27px;
 }
 .search{
   background: white;
@@ -155,10 +176,26 @@ main{
 }
 
 .img-grid{
-  width: 250px;
+  width: 17%;
   height: 250px;
   border: 1px solid lightgrey;
   margin: 1.5em 1em;
+}
+
+.img-grid:hover {
+  border: 1px solid #777;
+}
+
+
+.img-grid img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.desc {
+  padding: 1px;
+  text-align: center;
 }
 
 footer{
@@ -175,3 +212,263 @@ footer{
   font-family: inherit;
   font-size: 15 px;
 }
+
+/* ////////////////////////////////////////////////////////////////////// */
+@media (max-width: 812px){
+  body{
+    margin: 0;
+  }
+
+  #logo{
+    /* border: 1px solid red; */
+    width: 20%; 
+    margin-left: 2em;
+
+  }
+
+  nav{
+    background:#009df8;
+      display: flex;
+    }
+
+
+  header nav .hamburger li:first-child{
+      display: block;
+      position: absolute;
+      top: .75em;
+      right: 2em;
+    }
+    header nav .hamburger .line li{
+      display: block;
+      float: right;
+    }
+   .slideDown {
+      height: 8em;
+    }
+    nav ul{
+      height: 0;
+      transition: height 0.5s;
+      overflow: hidden;
+    }
+    
+.quote p{
+  /* border: 1px solid red; */
+font-size: 13px;
+line-height: 20px;
+right: 5em;
+top: 0.5em;
+}
+.paws{
+  font-size: 19px;
+}
+
+.form-row{
+  /* border: 1px solid red; */
+  width: 40%;
+  position: absolute;
+  left: 10.5em;
+}
+
+#breeds{
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 1em;
+  padding-left: 3em;
+  font-size: 12px;
+}
+.dog-selector{
+  font-size: 11px;
+  width: 100px;
+  border: 1px solid lightgrey;
+}
+
+#get-dogs{
+  border: 1px solid lightgrey;
+  position: absolute;
+  display: block;
+  margin-left: 3em;
+  margin-top: 5px;
+}
+
+.section-one{
+  height: 500px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.api-img{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  /* left: 1em; */
+}
+.info{
+  height: 150px;
+  width: 150px;
+  margin-left: 5em;
+  position: absolute;
+  /* left: 1em; */
+}
+
+.section-two{
+  height: 3000px;
+}
+
+.img-grid{
+  width: 200px;
+  height: 200px;
+margin-left: 5em;
+margin-top: 3em;
+padding-top: 10px;
+border: none;
+}
+.img-grid img{
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 200px;
+}
+.img-grid:hover{
+  border: 1px solid light grey;
+  cursor: pointer;
+}
+
+footer{
+  border: 1px solid red;
+  height: 50px;
+}
+  }
+/* ////////////////////////////////////////////////////////////////////// */
+  @media (max-width: 1290px){
+    body{
+      margin: 0;
+    }
+  
+    #logo{
+      /* border: 1px solid red; */
+      background-image: url('images/dog_logo-final.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%; 
+      margin-left: 3em;
+      margin-top: 2em;
+      position: absolute;
+  
+    }
+  
+    nav{
+      background:#009df8;
+        height: 120px;
+        display: flex;
+        /* position: sticky;
+        top: 0; */
+        /* justify-content: center; */
+      }
+  
+      ul li{
+        display: none;
+      }
+  .hamburger {
+    display: block;
+  }
+    /* header nav .hamburger li:first-child{
+        display: block;
+        position: absolute;
+        top: 3em;
+        right: 4em;
+      }
+      header nav .hamburger .line li{
+        display: block;
+        float: right;
+      }
+     .slideDown {
+        height: 8em;
+      } */
+    
+  .quote p{
+    /* border: 1px solid red; */
+  font-size: 13px;
+  line-height: 20px;
+  right: 3em;
+  top: 0.5em;
+  }
+  .paws{
+    font-size: 19px;
+  }
+  
+  .form-row{
+    /* border: 1px solid red; */
+    width: 40%;
+    left: 10.5em;
+    display: flex;
+  }
+  
+  #breeds{
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 1.3em;
+    padding-left: 6.5em;
+    font-size: 20px;
+  }
+  .dog-selector{
+    font-size: 20px;
+    width: 200px;
+    border: 1px solid lightgrey;
+    margin-bottom: 1em;
+    margin-left: 10em;
+  }
+  
+  #get-dogs{
+    border: 1px solid lightgrey;
+    position: absolute;
+    display: block;
+    margin-left: 36em;
+    margin-top: 5px;
+  }
+  
+  .section-one{
+    height: 1200px;
+    width: auto;
+    display: block;
+  }
+  .api-img{
+    height: 500px;
+    width: 500px;
+    margin-top: 3em;
+    /* left: 1em; */
+  }
+  .info{
+    height: 500px;
+    width: 500px;
+    margin-top: 35em;
+    left: 4.5em;
+  }
+  
+  .section-two{
+    height: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img-grid{
+    width: 200px;
+    height: 200px;
+  margin-left: 5em;
+  margin-top: 4em;
+  padding-top: 10px;
+  border: none;
+  }
+  .img-grid img{
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 300px;
+  }
+  .img-grid:hover{
+    cursor: pointer;
+  }
+
+  footer{
+    height: 50px;
+    margin-top: 1830px;
+  }
+    }

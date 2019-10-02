@@ -5,32 +5,28 @@ const infoDisplay = document.querySelector(".info")
 
 
 const getBreeds = async function () {
-  const response = await axios.get("https://api.thedogapi.com/v1/breeds");
-  // console.log(response.data)
+  const response = await axios.get("https://dog.ceo/api/breeds/list/all");
+  console.log(response.data.message)
+  const breeds = Object.keys(response.data.message);
 
-  const breeds = response.data
+  //   const breeds = response.data.items
   for (let i = 0; i < breeds.length; i++) {
-    dropdown.innerHTML += `<option id=${breeds[i].id}>${breeds[i].name}</option>`
-
-    // dropdown.addEventListener("click", async function () {
-    //   const breed = `${breeds[i].name}`;
-    //   const response = await axios.get(`https://api.thedogapi.com/v1/breeds/search?q?=${breed}`)
-    //   console.log(response)
-    //   const dogPic = response.data;
-    //   debugger;
-    //   picDisplay.innerHTML = `<img src=${dogPic}>`
-    // })
+    dropdown.innerHTML += `<option id=${breeds[i]}>${breeds[i]}</option>`
   }
 
 }
 getBreeds();
+
+
+
+
 fetchButton.addEventListener('click', async function () {
   const breed = dropdown.value;
   console.log(breed);
-  const response = await axios.get(`https://api.thedogapi.com/v1/breeds/search?q=${breed}`)
+  const response = await axios.get(`https://dog.ceo/api/breeds/list/all`)
   console.log(response);
   const dogInfo = response.data[0];
-  // console.log(dogInfo)
+  console.log(dogInfo)
   infoDisplay.innerHTML = `<p>Name: ${dogInfo.name}</p>`
 
   // next api call needs lowercase names, so the next line makes dog breed lowercase
