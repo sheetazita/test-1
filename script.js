@@ -1,3 +1,14 @@
+const hamburgerButton = document.querySelector(".hamburger");
+const display = document.querySelector(".navlist")
+
+hamburgerButton.addEventListener("click", function () {
+  if (display.style.display === "none") {
+    display.style.display = "block";
+  } else {
+    display.style.display = "none";
+  }
+})
+
 const dropdown = document.querySelector(".dog-selector");
 const picDisplay = document.querySelector(".api-img");
 const fetchButton = document.querySelector("#get-dogs");
@@ -18,8 +29,6 @@ const getBreeds = async function () {
 
 }
 getBreeds();
-
-
 
 
 fetchButton.addEventListener('click', async function () {
@@ -55,6 +64,13 @@ fetchButton.addEventListener('click', async function () {
   // }
 
 })
+
+dropdown.addEventListener("keyup", function (event) {
+  if (event.keyCode === enter) {
+    event.preventDefault();
+    button.click();
+  }
+});
 
 dogPics.forEach(function (dog) {
   dog.addEventListener('click', async function (event) {
