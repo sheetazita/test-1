@@ -1,0 +1,201 @@
+body{
+  background-color: #EDEDED;
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+}
+header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.hamburger li{
+  list-style: none;
+}
+
+nav {
+  background:#009df8;
+  height: 100px;
+  display: flex;
+}
+
+#logo {
+  /* border: 1px solid red; */
+  background-image: url("images/dog_logo-final.png");
+  background-size: 190px;
+  background-repeat: no-repeat;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+}
+  
+#logo img {
+  width: 200px;
+}
+
+.navlist {
+  width: 50%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlist li {
+  list-style: none;
+  font-size: 24px;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  cursor: pointer;
+}
+.navlist li:hover{
+  color: #d4e7ff;
+}
+
+.main{
+  /* border: 1px solid red; */
+  background: white;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+
+.title{
+  font-size: 27px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-weight: bolder;
+  color: #4f4f4f;
+  margin-top: 10px;
+}
+
+.grid-storyOne, .grid-storyTwo, .grid-storyThree, .grid-storyFour, .grid-storyFive, .grid-storySix {
+  width: 30%;
+  height: 300px;
+  /* border: 1px solid lightgrey; */
+  margin: 25px 20px;
+  object-fit: cover;
+  /* border: 1px solid red; */
+}
+
+a{
+  font-family: inherit;
+  color: #0469c2;
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* .desc{
+  border: 1px solid red;
+} */
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3165f5;
+  cursor: pointer;
+}
+
+.grid-storyOne{
+  background: url("images/doglickpaw.jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center 70px;
+}
+
+.grid-storyTwo{
+  background: url("images/nationaldogday.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center 60px;
+}
+.grid-storyThree{
+  background: url("images/doglanguage.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.grid-storyFour{
+  background: url("images/dogname.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.grid-storyFive{
+  background: url("images/dogadopt.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.grid-storySix{
+  background: url("images/dogadopt2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+/* --------------------------- vid section --------------------------------*/
+
+#vid-gallery {
+  display: flex;
+  background: white;
+  padding: 20px 0 20px 0;
+}
+
+.video {
+  width: 48%;
+  margin: 0 auto;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* end of viv section -------------------------------------------*/
+
+footer{
+  height: 40px;
+  background: #9ccfff;
+}
+.copyright{
+  margin-top: 75px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+/* 991px BREAKPOINT!!-------------------------------------------------*/
+@media (max-width: 802px) {
+
+
+}
+
+/* 560px BREAKPOINT!!-------------------------------------------------*/
+@media (max-width: 560px) {
+  
+}
+
+/* 375px BREAKPOINT!!-------------------------------------------------*/
+@media (max-width: 375px) {
+
+}

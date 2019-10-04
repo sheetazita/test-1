@@ -1,9 +1,18 @@
 const hamburgerButton = document.querySelector(".hamburger");
-const display = document.querySelector(".navlist")
+const display = document.querySelector(".hamburgerNavlist")
+const exit = document.querySelector("#exit")
 
 hamburgerButton.addEventListener("click", function () {
-  if (display.style.display === "none") {
+  if (display.style.display === "" || display.style.display === "none") {
     display.style.display = "block";
+  } else {
+    display.style.display = "none";
+  }
+})
+
+exit.addEventListener("click", function () {
+  if (display.style.display === "none") {
+    display.style.display === "block";
   } else {
     display.style.display = "none";
   }
