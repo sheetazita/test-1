@@ -116,5 +116,3 @@ const initialDog = async function () {
 }
 
 initialDog()
-
-
